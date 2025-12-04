@@ -1,0 +1,59 @@
+import math
+
+while True:
+    print("menue")
+    print("1)pow a number")
+    print("2)log10 numbers")
+    print("3)exp number")
+    print("4)sin a number")
+    print("5)cos a number")
+    print("6)tan a number")
+    print("7)cot a number")
+    print("8)factorial a number")
+    print("9)sqr a number")
+    print("0)exit")
+    option=int(input("enter a option:"))
+     
+    if option== 1:
+        a=int(input("enter a number:"))
+        b=int(input("enter the sec number:"))
+        ans=math.pow(a, b)
+        print("the answer is:",ans)
+    elif option== 2:
+        x=int(input("enter a number for log10:"))
+        ans_2=math.log10(x)
+        print("the answer is",ans_2)
+    elif option==3:
+        j=int(input("enter your number:"))
+        ans_3=math.exp(j)
+        print("the answer is:",ans_3)
+    elif option== 4:
+        o=int(input("enter a number:"))
+        ans_4=math.sin(math.radians(o))
+        print("the answer is:",ans_4)
+    elif option== 5:
+        c=int(input("enter a number:"))
+        ans_5=math.cos(math.radians(c))
+        print("the answer is",ans_5)
+    elif option== 6:
+        q=int(input("enter a number:"))
+        ans_6=math.tan(math.radians(q))
+        print("the answer is:",ans_6)
+    elif option== 7:
+        
+        s=int(input("enter a number:"))
+        ans_7=1/math.tan(math.radians(s))
+        print("the answer is",ans_7)
+    elif option== 8:
+        w=int(input("enter a number:"))
+        ans_8=math.factorial(w)
+        print("the answer is:",ans_8)
+    elif option== 9:
+        e=int(input("enter a number:"))
+        ans_9=math.sqrt(e)
+        print("the answer is:",ans_9)
+    elif option== 0:
+        break
+             
+    else:
+        print("invalied option")
